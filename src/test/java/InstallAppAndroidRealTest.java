@@ -11,7 +11,7 @@ public class InstallAppAndroidRealTest {
         DesiredCapabilities cap = new DesiredCapabilities();
         cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "Appium");
         cap.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
-        cap.setCapability(MobileCapabilityType.PLATFORM_VERSION, "9.0");
+        cap.setCapability(MobileCapabilityType.PLATFORM_VERSION, "10");
         cap.setCapability(MobileCapabilityType.DEVICE_NAME, "Android");
         cap.setCapability(MobileCapabilityType.APP, "/Users/alexeysolovyev/Documents/GitHub/Appium_Techie/resources/com.workpail.inkpad.notepad.notes-4.3.61-APK4Fun.com.apk");
         URL url = new URL("http:/127.0.0.1:4723/wd/hub");

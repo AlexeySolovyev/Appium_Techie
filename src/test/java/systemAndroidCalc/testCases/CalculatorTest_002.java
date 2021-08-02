@@ -3,10 +3,12 @@ package systemAndroidCalc.testCases;
 import org.junit.Test;
 import systemAndroidCalc.pageObjects.CalculatorPage;
 
+import java.io.IOException;
+
 public class CalculatorTest_002 extends BaseClass{
 
     @Test
-    public void calculatorTestSub_002() {
+    public void calculatorTestSub_002() throws IOException {
         CalculatorPage calculator = new CalculatorPage(driver);
         assert (calculator.isDisplayed());
         calculator.key9.click();
@@ -31,6 +33,7 @@ public class CalculatorTest_002 extends BaseClass{
         calculator.key9.click();
         calculator.key0.click();
         calculator.keyEquals.click();
+        captureScreen(driver, "Subtraction result Test case");
         assert (calculator.result.getText().equals("8641975320"));
     }
 }

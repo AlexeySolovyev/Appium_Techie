@@ -6,7 +6,6 @@ import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.PageFactory;
-import systemAndroidCalc.testCases.BaseClass;
 
 public class CalculatorPage {
     private AndroidDriver<AndroidElement> driver;
